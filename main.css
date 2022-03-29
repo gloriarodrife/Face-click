@@ -9,6 +9,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .head {
@@ -36,8 +41,8 @@
   background-color: black;
   border-radius: 50%;
 }
-.eye__rigth:hover {
-  height: 4px;
+.eye__rigth__transform {
+  height: 3px;
 }
 
 .eye__left {
@@ -52,4 +57,8 @@
   position: absolute;
   top: 180%;
   left: 25%;
+}
+
+.scale {
+  transform: scale(2);
 }
