@@ -1,3 +1,9 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -13,11 +19,37 @@
   border-radius: 50px;
 }
 .face {
-  font-family: "courier new", serif;
+  font-family: 'courier new', serif;
   font-size: 2.5em;
   font-weight: bold;
-  left: 50%;
+  left: 30%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -60%) rotate(90deg);
+  top: 30%;
+  /* transform: translate(-50%, -60%) rotate(90deg); */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.eye__rigth {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+.eye__rigth:hover {
+  height: 4px;
+}
+
+.eye__left {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.smile {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 180%;
+  left: 25%;
 }
