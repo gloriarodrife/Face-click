@@ -17,11 +17,15 @@
 }
 
 .head {
+  position: relative;
   background: #fc0;
   height: 100px;
-  position: relative;
   width: 100px;
-  border-radius: 50px;
+  border-radius: 50%;
+}
+
+.head:hover {
+  cursor: pointer;
 }
 .face {
   font-family: 'courier new', serif;
@@ -30,7 +34,6 @@
   left: 30%;
   position: absolute;
   top: 30%;
-  /* transform: translate(-50%, -60%) rotate(90deg); */
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -62,3 +65,26 @@
 .scale {
   transform: scale(2);
 }
+
+/* @media all and (min-width: 768px) {
+  .head {
+    height: 150px;
+    width: 150px;
+  }
+  .eye__rigth {
+    width: 12px;
+    height: 12px;
+  }
+  .eye__left {
+    width: 12px;
+    height: 12px;
+  }
+
+  .smile {
+    font-size: 52px;
+  }
+
+  .eye__rigth__transform {
+    height: 12px;
+  }
+} */
