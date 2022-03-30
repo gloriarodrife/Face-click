@@ -18,7 +18,7 @@
 
 .head {
   position: relative;
-  background: #fc0;
+  background: rgb(255, 174, 0);
   height: 100px;
   width: 100px;
   border-radius: 50%;
