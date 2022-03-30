@@ -1,23 +1,90 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .head {
+  position: relative;
   background: #fc0;
   height: 100px;
-  position: relative;
   width: 100px;
-  border-radius: 50px;
+  border-radius: 50%;
+}
+
+.head:hover {
+  cursor: pointer;
 }
 .face {
-  font-family: "courier new", serif;
+  font-family: 'courier new', serif;
   font-size: 2.5em;
   font-weight: bold;
-  left: 50%;
+  left: 30%;
   position: absolute;
   top: 30%;
-  transform: translate(-50%, -60%) rotate(90deg);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+.eye__rigth {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+.eye__rigth__transform {
+  height: 3px;
+}
+
+.eye__left {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.smile {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 180%;
+  left: 25%;
+}
+
+.scale {
+  transform: scale(2);
+}
+
+/* @media all and (min-width: 768px) {
+  .head {
+    height: 150px;
+    width: 150px;
+  }
+  .eye__rigth {
+    width: 12px;
+    height: 12px;
+  }
+  .eye__left {
+    width: 12px;
+    height: 12px;
+  }
+
+  .smile {
+    font-size: 52px;
+  }
+
+  .eye__rigth__transform {
+    height: 12px;
+  }
+} */
